@@ -1,0 +1,13 @@
+project_name: "Stereo Vision"
+
+# Data path -> Absolute path is required!
+dataset: "/home/daniel/Documents/stereo_lidar_fusion/data/Motorcycle/"
+
+# Flags
+apply_undistort_rectify: false # Undistort and rectify images first (distortion coeffs must be specified)
+generate_pointcloud: true # Generate Pointcloud for each scene
+generate_mesh: true # Generate simple mesh for each scene
+use_groundtruth: no # Use groundtruth for comparison (if active also creates pointclouds + multiview registration)
+max_depth: 3000 # Maximum expected depth in dataset in millimeters (unsigned integer)
+max_disparity: 300 # Maximum expected disparity (Is related to max_depth via camera intrinsics) (unsigned integer)
+block_size: 13 # Width/height of window for blockmatching -> must be uneven and > 0 (unsigned integer)
