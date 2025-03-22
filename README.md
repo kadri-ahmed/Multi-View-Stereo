@@ -1,4 +1,4 @@
-# Stereo_fusion
+# Multi View Stereo
 An implementation of a stereo-pipeline based on block-matching.
 Multiview-pointcloud registration uses Open3D implementations for ICP and coarse alignment.
 
